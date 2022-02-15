@@ -1,0 +1,14 @@
+{
+	"name": "Search photo bot",
+	"description": "Run telegram bot on heroku",
+	"repository": "https://github.com/winkxx/Bot-meta",
+	"keywords": ["telegram"],
+	"stack": "container",
+  	"env": {
+			"PORT": {
+				"description": "端口,整个8868吧",
+				"value": "8868"
+      }
+		}
+	
+}
