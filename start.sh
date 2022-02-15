@@ -7,7 +7,12 @@ bgmi install
 pip install bgmi -U
 bgmi upgrade
 bgmi config
-bgmi_http --port=8868 --address=0.0.0.0
-
+bgmi_http --port=8888 --address=0.0.0.0
+git clone https://github.com/BGmi/BGmi-frontend.git
+chmod 0777 /BGmi-frontend
+mkdir /root/.bgmi/frontend
+mv /BGmi-frontend/* /root/.bgmi/frontend/
+cd /root/.bgmi/frontend
+npm install
 nginx -c /etc/nginx/nginx.conf
 nginx -s reload
